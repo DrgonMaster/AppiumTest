@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite1" >
+    <test name="test" preserver-order="true">    
+        <classes >  
+        <class name="com.niuguwang.cases.login" >  </class> 
+         <class name="com.niuguwang.cases.AMarket" >  </class> 
+        </classes>  
+    <!-- 主要是需要添加以下两个监听器，listener类在reportng-1.1.5.jar中 -->  
+     <listeners>  
+            <listener class-name="org.uncommons.reportng.HTMLReporter"/>  
+            <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />  
+       </listeners>  
+    </test>   
+</suite>
